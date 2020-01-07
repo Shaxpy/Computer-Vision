@@ -11,10 +11,12 @@ def detect(gray, frame): # We create a function that takes as input the image in
         cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2) # We paint a rectangle around the face.
         roi_gray = gray[y:y+h, x:x+w] # We get the region of interest in the black and white image.
         roi_color = frame[y:y+h, x:x+w] # We get the region of interest in the colored image.
-        eyes = eye_cascade.detectMultiScale(roi_gray, 1.1, 3) # We apply the detectMultiScale method to locate one or several eyes in the image.
+        cv2.putText(img,'Face',(x+100,y-10),font,2.5,(255,0,0),4,cv2.LINE_AA)
+        eyes = eye_cascade.detectMultiScale(roi_gray, 1.1, 24) # We apply the detectMultiScale method to locate one or several eyes in the image.
         for (ex, ey, ew, eh) in eyes: # For each detected eye:
             cv2.rectangle(roi_color,(ex, ey),(ex+ew, ey+eh), (0, 255, 0), 2) # We paint a rectangle around the eyes, but inside the referential of the face.
-    return frame # We return the image with the detector rectangles.
+            cv2.putText(img,'Eyes',(ex+200,ey+200),font,1.5,(0,200,0),2,cv2.LINE_8)
+            return frame # We return the image with the detector rectangles.
 
 video_capture = cv2.VideoCapture(0) # We turn the webcam on.
 
