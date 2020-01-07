@@ -35,7 +35,7 @@ while 1:
     
     
     cv2.imshow('img',img)
-    if cv2.waitKey(1) & 0xFF == ord('q'): # If we type on the keyboard:
+    if cv2.waitKey(2) & 0xFF== ord('q'): # If we type on the keyboard:
         break
 
 cap.release()
