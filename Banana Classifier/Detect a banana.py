@@ -11,7 +11,7 @@ cap = cv2.VideoCapture(0)
 while 1:
     ret, img = cap.read()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+    faces = face_cascade.detectMultiScale(gray, 1.2, 14)
     
     # add this
     # image, reject levels level weights.
@@ -28,14 +28,14 @@ while 1:
         
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = img[y:y+h, x:x+w]
-        eyes = eye_cascade.detectMultiScale(roi_gray, 1.1, 24)
+        eyes = eye_cascade.detectMultiScale(roi_gray, 1.2, 12)
         for (ex,ey,ew,eh) in eyes:
             cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
             cv2.putText(img,'Eyes',(ex+200,ey+200),font,1.5,(0,200,0),2,cv2.LINE_8)
     
     
     cv2.imshow('img',img)
-    if cv2.waitKey(2) & 0xFF== ord('q'): # If we type on the keyboard:
+    if cv2.waitKey(1) & 0xFF == ord('q'): # If we type on the keyboard:
         break
 
 cap.release()
