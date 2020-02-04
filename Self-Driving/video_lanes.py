@@ -98,7 +98,7 @@ while(cap.isOpened()):
 
     line_image=dlines(frame,average)
     combine=cv2.addWeighted(frame,0.8,line_image,1,1)# gamma values- to add to the sum
-    cv2.imshow('result',combine)
-    cv2.waitKey(1)
+  cv2.imshow('result',combine)
+  cv2.waitKey(1)
 # plt.imshow(canny)  #----for plotting graph 
 # plt.show()
