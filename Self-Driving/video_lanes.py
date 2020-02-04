@@ -33,7 +33,6 @@ The function addWeighted calculates the weighted sum of two arrays
 8. Find lanes in video
 
 
-
 '''
 import numpy as np
 import cv2
