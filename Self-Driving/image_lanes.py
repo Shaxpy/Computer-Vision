@@ -32,8 +32,6 @@ The function addWeighted calculates the weighted sum of two arrays
 
 
 
-
-
 '''
 import numpy as np
 import cv2
