@@ -11,6 +11,9 @@ To locate the local maxima and minima, we go through every pixel in the image an
 
 Keypoint Localisation: Identifying the suitable features or keypoints
 To locate the local maxima and minima, we go through every pixel in the image and compare it with its neighboring pixels.
+Hence, we will eliminate the keypoints that have low contrast, or lie very close to the edge.
+
 
 Orientation Assignment: Ensure the keypoints are rotation invariant
 Keypoint Descriptor: Assign a unique fingerprint to each keypoint
+
