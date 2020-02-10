@@ -1,5 +1,5 @@
 # USAGE
-# python detect_blinks.py --shape-predictor shape_predictor_68_face_landmarks.dat --video blink_detection_demo.mp4
+# python detect_blinks.py --shape-predictor shape_predictor_68_face_landmarks.dat --video dd.mp4
 # python detect_blinks.py --shape-predictor shape_predictor_68_face_landmarks.dat
 
 # import the necessary packages
@@ -41,7 +41,7 @@ args = vars(ap.parse_args())
 # define two constants, one for the eye aspect ratio to indicate
 # blink and then a second constant for the number of consecutive
 # frames the eye must be below the threshold
-EYE_AR_THRESH = 0.3
+EYE_AR_THRESH = 0.26
 EYE_AR_CONSEC_FRAMES = 3
 
 # initialize the frame counters and the total number of blinks
