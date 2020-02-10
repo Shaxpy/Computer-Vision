@@ -5,7 +5,8 @@ Scale space is a collection of images having different scales, generated from a 
 The ideal number of octaves should be four, and for each octave, the number of blur images should be five.
 
 DoG
-Difference of Gaussian is a feature enhancement algorithm that involves the subtraction of one blurred version of an original image from another, less blurred version of the original.
+Difference of Gaussian is a feature enhancement algorithm that involves the subtraction of one blurred version of 
+an original image from another, less blurred version of the original.
 
 To locate the local maxima and minima, we go through every pixel in the image and compare it with its neighboring pixels
 
