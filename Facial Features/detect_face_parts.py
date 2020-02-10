@@ -1,5 +1,5 @@
-# To use it
-# python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg 
+# USAGE
+# python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/1.jpg 
 
 # import the necessary packages
 from imutils import face_utils
@@ -48,7 +48,7 @@ for (i, rect) in enumerate(rects):
 		# loop over the subset of facial landmarks, drawing the
 		# specific face part
 		for (x, y) in shape[i:j]:
-			cv2.circle(clone, (x, y), 1, (0, 0, 255), -1)
+			cv2.circle(clone, (x, y),1, (0,255, 255),2)
 
 		# extract the ROI of the face region as a separate image
 		(x, y, w, h) = cv2.boundingRect(np.array([shape[i:j]]))
