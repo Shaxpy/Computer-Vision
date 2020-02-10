@@ -2,7 +2,6 @@
 # python detect_blinks.py --shape-predictor shape_predictor_68_face_landmarks.dat --video dd.mp4
 # python detect_blinks.py --shape-predictor shape_predictor_68_face_landmarks.dat
 
-# import the necessary packages
 from scipy.spatial import distance as dist
 from imutils.video import FileVideoStream
 from imutils.video import VideoStream
@@ -68,7 +67,6 @@ fileStream = True
 # fileStream = False
 time.sleep(1.0)
 
-# loop over frames from the video stream
 while True:
 	# if this is a file video stream, then we need to check if
 	# there any more frames left in the buffer to process
