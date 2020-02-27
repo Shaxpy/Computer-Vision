@@ -1,3 +1,5 @@
+The major advantage of SIFT features, over edge features or hog features,
+is that they are not affected by the size or orientation of the image.
 What am I doing-
 
 Constructing a Scale Space: To make sure that features are scale-independent
