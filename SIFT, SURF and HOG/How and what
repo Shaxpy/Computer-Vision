@@ -1,0 +1,24 @@
+SIFT
+
+The major advantage of SIFT features, over edge features or hog features,
+is that they are not affected by the size or orientation of the image.
+What am I doing-
+
+Constructing a Scale Space: To make sure that features are scale-independent
+Scale space is a collection of images having different scales, generated from a single image.
+The ideal number of octaves should be four, and for each octave, the number of blur images should be five.
+
+DoG
+Difference of Gaussian is a feature enhancement algorithm that involves the subtraction of one blurred version of 
+an original image from another, less blurred version of the original.
+
+To locate the local maxima and minima, we go through every pixel in the image and compare it with its neighboring pixels
+
+Keypoint Localisation: Identifying the suitable features or keypoints
+To locate the local maxima and minima, we go through every pixel in the image and compare it with its neighboring pixels.
+Hence, we will eliminate the keypoints that have low contrast, or lie very close to the edge.
+
+
+Orientation Assignment: Ensure the keypoints are rotation invariant
+Keypoint Descriptor: Assign a unique fingerprint to each keypoint
+
