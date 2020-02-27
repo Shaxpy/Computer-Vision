@@ -1,5 +1,4 @@
-SIFT
-
+                                                    SIFT
 The major advantage of SIFT features, over edge features or hog features,
 is that they are not affected by the size or orientation of the image.
 What am I doing-
@@ -22,3 +21,14 @@ Hence, we will eliminate the keypoints that have low contrast, or lie very close
 Orientation Assignment: Ensure the keypoints are rotation invariant
 Keypoint Descriptor: Assign a unique fingerprint to each keypoint
 
+                                                  HOG
+                                                  
+The HOG feature descriptor counts the occurrences of gradient orientation in localized portions of an image.We need to 
+preprocess the image and bring down the width to height ratio to 1:2. 
+The image size should preferably be 64 x 128. 
+This is because we will be dividing the image into 8*8 and 16*16 patches to extract the features.
+
+By doing so, we get the features (or histogram) for the smaller patches which in turn represent the whole image.
+We can certainly change this value here from 8 x 8 to 16 x 16 or 32 x 32.
+
+If we divide the image into 8×8 cells and generate the histograms, we will get a 9 x 1 matrix for each cell.
