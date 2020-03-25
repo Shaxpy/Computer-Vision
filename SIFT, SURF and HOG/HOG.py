@@ -4,7 +4,6 @@ from skimage.feature import hog
 from skimage import exposure
 import matplotlib.pyplot as plt
 
-
 #Reading the image
 img = imread('puppy.jpeg')
 resized_img = resize(img, (128,64)) 
