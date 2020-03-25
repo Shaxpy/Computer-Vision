@@ -5,7 +5,7 @@ from skimage import exposure
 import matplotlib.pyplot as plt
 
 
-#reading the image
+#Reading the image
 img = imread('puppy.jpeg')
 resized_img = resize(img, (128,64)) 
 print(resized_img.shape)
