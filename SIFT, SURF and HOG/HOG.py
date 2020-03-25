@@ -18,7 +18,7 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8), sharex=True, sharey=True)
 ax1.imshow(resized_img, cmap=plt.cm.gray) 
 ax1.set_title('Input image') 
 
-# Rescale histogram for better display 
+#Rescale histogram for better display 
 hog_image_rescaled = exposure.rescale_intensity(hog_image, in_range=(0, 10)) 
 
 
