@@ -3,7 +3,7 @@ Steps involved in this
 
 1. Convert to grayscale
 2. Remove some noise from the lane image
---Smoothen -weighted average of pixels-Gaussian blur
+--Smoothen weighted average of pixels-Gaussian blur
 
 3. Apply Canny method for edges(to outline strong grad)
 Performs a derivative on our function in both  and y directions measuring change in
