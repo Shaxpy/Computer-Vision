@@ -12,6 +12,11 @@ Identifies Clusters in subsequent iterations which may or may not be reasonable,
 2.New ROI is calculated</br>
 3.The orientation of best fitting ellipse is then calculated and Mean shift is applied to the new scaled ROI 
 
+### **Tracking APIs**
+1. Boosting Tracker(used in haarcascade)</br>
+2. MIL tracker</br>
+3. KCF(Kernelized Correlation Filters)- Better but not good for high speed</br>
+4. 
 ### **High Speed Tracking**
 For kernel regression, we derive a new Kernelized Correlation Filter (KCF), that unlike other kernel algorithms has the exact same complexity as its linear counterpart. Building on it, we also propose a fast multi-channel extension of linear correlation filters, via a linear kernel, which we call Dual Correlation Filter (DCF).
 
