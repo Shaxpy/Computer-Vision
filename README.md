@@ -6,7 +6,8 @@ With OpenCV , the possibilities are endless! I have conquered the following: <br
 - Facial features (or counting eye blinks!)
 - Making haarcascades
 - Using OpenCV APIs for Object tracking
-- Depth maps using Stereo algorithms [Not open sourced, kinda secret :) ]
-Get to know about my applications with C++ on [Raspberry Pi 4](https://github.com/Shaxpy/Raspberry-Pi4) and [Intel Realsense D455](https://github.com/Shaxpy/Intel_Realsense_D455)
+- Depth maps using Stereo algorithms [Not open sourced, kinda secret :) ] <br>
+
+**Get to know about my applications with C++ on [Raspberry Pi 4](https://github.com/Shaxpy/Raspberry-Pi4) and [Intel Realsense D455](https://github.com/Shaxpy/Intel_Realsense_D455)**
 
 
